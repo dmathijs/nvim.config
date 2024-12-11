@@ -12,7 +12,7 @@ return {
   build = ":TSUpdate", -- Equivalent to {'do': ':TSUpdate'} in vim-plug
   config = function()
     require("nvim-treesitter.configs").setup({
-      ensure_installed = { "lua", "javascript" }, -- Specify languages
+      ensure_installed = { "lua", "javascript", "c_sharp" }, -- Specify languages
       highlight = { enable = true }, -- Enable syntax highlighting
       -- Add additional Treesitter configurations here
   })

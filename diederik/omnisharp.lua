@@ -10,7 +10,7 @@ require'lspconfig'.omnisharp.setup {
         EnableEditorConfigSupport = true,
         -- Specifies whether 'using' directives should be grouped and sorted during
         -- document formatting.
-        OrganizeImports = nil,
+        OrganizeImports = true,
       },
       MsBuild = {
         -- If true, MSBuild project system will only load projects for files that
@@ -19,7 +19,7 @@ require'lspconfig'.omnisharp.setup {
         -- for projects that are relevant to code that is being edited. With this
         -- setting enabled OmniSharp may load fewer projects and may thus display
         -- incomplete reference lists for symbols.
-        LoadProjectsOnDemand = nil,
+        LoadProjectsOnDemand = false,
       },
       RoslynExtensionsOptions = {
         -- Enables support for roslyn analyzers, code fixes and rulesets.
