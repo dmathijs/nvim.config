@@ -3,3 +3,6 @@
 # required for '<leader>fgr'
 choco install ripgrep 
 
+# terminal color
+#191724
+
