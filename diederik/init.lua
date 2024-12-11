@@ -1,4 +1,5 @@
 require("diederik.lazy")
 require("diederik.plugins")
 require("diederik.remap")
+require("diederik.omnisharp")
 print("Welcome back, Diederik")
