@@ -1,7 +1,6 @@
-local pid = vim.fn.getpid()
 require'lspconfig'.omnisharp.setup {
     --cmd = { "dotnet", "C:/tools/omnisharp/OmniSharp.exe" },
-    cmd = { "C:/tools/omnisharp/OmniSharp.exe", "--languageserver", "--hostPID", tostring(pid) };
+    cmd = { "C:/tools/omnisharp/OmniSharp.exe" };
 
     settings = {
       FormattingOptions = {
@@ -33,7 +32,7 @@ require'lspconfig'.omnisharp.setup {
         EnableImportCompletion = true,
         -- Only run analyzers against open files when 'enableRoslynAnalyzers' is
         -- true
-        AnalyzeOpenDocumentsOnly = nil,
+        AnalyzeOpenDocumentsOnly = false,
       },
       Sdk = {
         -- Specifies whether to include preview versions of the .NET SDK when
